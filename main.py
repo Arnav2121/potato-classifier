@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 import tempfile
 import matplotlib.image as mpimg
-model = tf.keras.load_model('3.keras')
+model = tf.keras.models.load_model('3.keras')
 
 def preprocess_image(image_path):
     img = mpimg.imread(image_path)
